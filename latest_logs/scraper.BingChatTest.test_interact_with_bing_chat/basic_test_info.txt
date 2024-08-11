@@ -1,0 +1,26 @@
+scraper.py::BingChatTest::test_interact_with_bing_chat
+--------------------------------------------------------------------
+Last Page: [WARNING! Browser Not Open!]
+ Duration: 13.60s
+  Browser: Chrome 127.0.6533.100
+   Driver: chromedriver 127.0.6533.99
+Timestamp: 1723234756  (Unix Timestamp)
+     Date: Friday, 9 August 2024
+     Time: 11:19:16 PM  (+03, UTC+03:00)
+--------------------------------------------------------------------
+Traceback:
+  File "/Users/emre.bulbul/Desktop/exercise-project/python/selenium-idata/scraper.py", line 12, in test_interact_with_bing_chat
+    captcha_image = self.find_element('img[alt="CAPTCHA Resmi"]')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emre.bulbul/Desktop/exercise-project/python/selenium-idata/venv/lib/python3.12/site-packages/seleniumbase/fixtures/base_case.py", line 9410, in find_element
+    return self.wait_for_element_visible(selector, by=by, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emre.bulbul/Desktop/exercise-project/python/selenium-idata/venv/lib/python3.12/site-packages/seleniumbase/fixtures/base_case.py", line 8852, in wait_for_element_visible
+    return page_actions.wait_for_element_visible(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emre.bulbul/Desktop/exercise-project/python/selenium-idata/venv/lib/python3.12/site-packages/seleniumbase/fixtures/page_actions.py", line 496, in wait_for_element_visible
+    timeout_exception(NoSuchElementException, message)
+  File "/Users/emre.bulbul/Desktop/exercise-project/python/selenium-idata/venv/lib/python3.12/site-packages/seleniumbase/fixtures/page_actions.py", line 254, in timeout_exception
+    raise exc(msg)
+Exception: Message: 
+ Element {img[alt="CAPTCHA Resmi"]} was not present after 10 seconds!
